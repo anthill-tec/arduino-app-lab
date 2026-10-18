@@ -3,8 +3,8 @@
 # On Git Bash, `git rev-parse` reports a Windows path (C:/...) whose colon would
 # be read as a PATH separator; `pwd` normalises it to the POSIX form (/c/...).
 PROJECT_ROOT=$(cd "$(git rev-parse --show-toplevel)" && pwd)
-NODE_VERSION='v18.15.0'
-YARN_VERSION='3.5.0'
+NODE_VERSION='v22.23.3'
+YARN_VERSION='4.18.1'
 
 ENGINES_DIR=$PROJECT_ROOT/__engines__
 

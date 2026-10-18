@@ -128,13 +128,13 @@ Open a fresh Git Bash in the repo. direnv should download the pinned engines to
 ```console
 $ which node && node -v
 /c/.../cloud-editor-mono/__engines__/node_bin/node
-v18.15.0
+v22.23.3
 ```
 
 A `ln: .../yarn_bin/...: cannot overwrite directory` warning on every load is
 expected and harmless. Git Bash cannot create real symlinks without Developer
 Mode, so `ln -s` copies the directory instead and the next `ln -nsf` refuses to
-clobber it. Yarn still resolves to 3.5.0.
+clobber it. Yarn still resolves to 4.18.1.
 
 ## 3. GitHub package registry token
 

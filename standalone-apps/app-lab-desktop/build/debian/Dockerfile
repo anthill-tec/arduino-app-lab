@@ -21,7 +21,7 @@ RUN apt-get update && \
 # with the other platform builds. Node 18 does not enable require(ESM), which
 # avoids the ERR_REQUIRE_CYCLE_MODULE failure that newer Node versions hit when
 # Vite loads its config through @vitejs/plugin-react.
-ENV NODE_VERSION=18.15.0
+ENV NODE_VERSION=22.23.3
 RUN curl -fsSL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-arm64.tar.xz" -o /tmp/node.tar.xz && \
     tar -xJf /tmp/node.tar.xz -C /usr/local --strip-components=1 && \
     rm /tmp/node.tar.xz && \
